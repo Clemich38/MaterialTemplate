@@ -32,10 +32,11 @@ $font-path: "../assets/fonts";
 // grey-theme            grey-accent
 // blue-grey-theme       blue-grey-accent
 
-$theme: blue-grey-theme;
-$accent: red-accent;
+$theme: orange-theme;
+$accent: light-green-accent;
 
 // -----------------------------------------------------------------
+
 
 
 
@@ -43,12 +44,12 @@ $accent: red-accent;
 $theme-dark-primary-color:    #00796B;
 $theme-primary-color:         #009688;
 $theme-light-primary-color:   #B2DFDB;
-$theme-text-icon-color:       #FFFFFF;
 
 // Default accent color
 $accent-color:                #FFC107;
 
 // Text colors
+$theme-text-icon-color:      #FFFFFF;
 $material-primary-text:      #212121;
 $material-secondary-text:    #757575;
 $material-divider-color:     #BDBDBD;
