@@ -1,0 +1,313 @@
+// Theming
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+// -----------------------------------------------------------------
+//             Theming
+// -----------------------------------------------------------------
+// Choose the theme color (main colors)
+// and the accent color (special item color, like FABs, toggles...)
+//
+// This is the only part you should modify,
+// unless you d'like to add you own custom colors
+//
+// red-theme             red-accent
+// pink-theme            pink-accent
+// purple-theme          purple-accent
+// deep-purple-theme     deep-purple-accent
+// indigo-theme          indigo-accent
+// blue-theme            blue-accent
+// light-blue-theme      light-blue-accent
+// cyan-theme            cyan-accent
+// teal-theme            teal-accent
+// green-theme           green-accent
+// light-green-theme     light-green-accent
+// lime-theme            lime-accent
+// yellow-theme          yellow-accent
+// amber-theme           amber-accent
+// orange-theme          orange-accent
+// deep-orange-theme     deep-orange-accent
+// brown-theme           brown-accent
+// grey-theme            grey-accent
+// blue-grey-theme       blue-grey-accent
+
+$theme: light-green-theme;
+$accent: orange-accent;
+
+// -----------------------------------------------------------------
+
+
+
+// Default themes
+$theme-dark-primary-color:    #00796B;
+$theme-primary-color:         #009688;
+$theme-light-primary-color:   #B2DFDB;
+$theme-text-icon-color:       #FFFFFF;
+
+// Default accent color
+$accent-color:                #FFC107;
+
+// Text colors
+$material-primary-text:      #212121;
+$material-secondary-text:    #757575;
+$material-divider-color:     #BDBDBD;
+
+
+@if $theme == red-theme {
+  $theme-dark-primary-color:    #D32F2F;
+  $theme-primary-color:         #F44336;
+  $theme-light-primary-color:   #FFCDD2;
+}
+@else if $theme == pink-theme {
+  $theme-dark-primary-color:    #C2185B;
+  $theme-primary-color:         #E91E63;
+  $theme-light-primary-color:   #F8BBD0;
+}
+@else if $theme == purple-theme {
+  $theme-dark-primary-color:    #7B1FA2;
+  $theme-primary-color:         #9C27B0;
+  $theme-light-primary-color:   #E1BEE7;
+}
+@else if $theme == deep-purple-theme {
+  $theme-dark-primary-color:    #512DA8;
+  $theme-primary-color:         #673AB7;
+  $theme-light-primary-color:   #D1C4E9;
+}
+@else if $theme == indigo-theme {
+  $theme-dark-primary-color:    #303F9F;
+  $theme-primary-color:         #3F51B5;
+  $theme-light-primary-color:   #C5CAE9;
+}
+@else if $theme == blue-theme {
+  $theme-dark-primary-color:    #1976D2;
+  $theme-primary-color:         #2196F3;
+  $theme-light-primary-color:   #BBDEFB;
+}
+@else if $theme == light-blue-theme {
+  $theme-dark-primary-color:    #0288D1;
+  $theme-primary-color:         #03A9F4;
+  $theme-light-primary-color:   #B3E5FC;
+}
+@else if $theme == cyan-theme {
+  $theme-dark-primary-color:    #0097A7;
+  $theme-primary-color:         #00BCD4;
+  $theme-light-primary-color:   #B2EBF2;
+}
+@else if $theme == teal-theme {
+  $theme-dark-primary-color:    #00796B;
+  $theme-primary-color:         #009688;
+  $theme-light-primary-color:   #B2DFDB;
+}
+@else if $theme == green-theme {
+  $theme-dark-primary-color:    #388E3C;
+  $theme-primary-color:         #4CAF50;
+  $theme-light-primary-color:   #C8E6C9;
+}
+@else if $theme == light-green-theme {
+  $theme-dark-primary-color:    #689F38;
+  $theme-primary-color:         #8BC34A;
+  $theme-light-primary-color:   #DCEDC8;
+}
+@else if $theme == lime-theme {
+  $theme-dark-primary-color:    #AFB42B;
+  $theme-primary-color:         #CDDC39;
+  $theme-light-primary-color:   #F0F4C3;
+}
+@else if $theme == yellow-theme {
+  $theme-dark-primary-color:    #FBC02D;
+  $theme-primary-color:         #FFEB3B;
+  $theme-light-primary-color:   #FFF9C4;
+}
+@else if $theme == amber-theme {
+  $theme-dark-primary-color:    #FFA000;
+  $theme-primary-color:         #FFC107;
+  $theme-light-primary-color:   #FFECB3;
+}
+@else if $theme == orange-theme {
+  $theme-dark-primary-color:    #F57C00;
+  $theme-primary-color:         #FF9800;
+  $theme-light-primary-color:   #FFE0B2;
+}
+@else if $theme == deep-orange-theme {
+  $theme-dark-primary-color:    #E64A19;
+  $theme-primary-color:         #FF5722;
+  $theme-light-primary-color:   #FFCCBC;
+}
+@else if $theme == brown-theme {
+  $theme-dark-primary-color:    #5D4037;
+  $theme-primary-color:         #795548;
+  $theme-light-primary-color:   #D7CCC8;
+}
+@else if $theme == grey-theme {
+  $theme-dark-primary-color:    #616161;
+  $theme-primary-color:         #9E9E9E;
+  $theme-light-primary-color:   #F5F5F5;
+}
+@else if $theme == blue-grey-theme {
+  $theme-dark-primary-color:    #455A64;
+  $theme-primary-color:         #607D8B;
+  $theme-light-primary-color:   #CFD8DC;
+}
+
+// Accent color
+@if $accent == red-accent {
+  $accent-color:    #FF5252;
+}
+@else if $accent == pink-accent {
+  $accent-color:    #FF4081;
+}
+@else if $accent == purple-accent {
+  $accent-color:    #E040FB;
+}
+@else if $accent == deep-purple-accent {
+  $accent-color:    #7C4DFF;
+}
+@else if $accent == indigo-accent {
+  $accent-color:    #536DFE;
+}
+@else if $accent == blue-accent {
+  $accent-color:    #448AFF;
+}
+@else if $accent == light-blue-accent {
+  $accent-color:    #03A9F4;
+}
+@else if $accent == cyan-accent {
+  $accent-color:    #00BCD4;
+}
+@else if $accent == teal-accent {
+  $accent-color:    #009688;
+}
+@else if $accent == green-accent {
+  $accent-color:    #4CAF50;
+}
+@else if $accent == light-green-accent {
+  $accent-color:    #8BC34A;
+}
+@else if $accent == lime-accent {
+  $accent-color:    #CDDC39;
+}
+@else if $accent == yellow-accent {
+  $accent-color:    #FFEB3B;
+}
+@else if $accent == amber-accent {
+  $accent-color:    #FFC107;
+}
+@else if $accent == orange-accent {
+  $accent-color:    #FF9800;
+}
+@else if $accent == deep-orange-accent {
+  $accent-color:    #FF5722;
+}
+@else if $accent == brown-accent {
+  $accent-color:    #795548;
+}
+@else if $accent == grey-accent {
+  $accent-color:    #9E9E9E;
+}
+@else if $accent == blue-grey-accent {
+  $accent-color:    #607D8B;
+}
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    $theme-primary-color,
+  secondary:  $accent-color,
+  danger:     #f53d3d,
+  light:      $theme-light-primary-color,
+  dark:       $theme-dark-primary-color,
+);
+
+
+// Ionic SASS variable overiding 
+$text-color:                 $material-primary-text !default;
+$link-color:                 color($colors, primary) !default;
+$background-color:           $theme-text-icon-color !default;
+$subdued-text-color:         $material-secondary-text !default;
+
+$toolbar-background:         $theme-primary-color !default;
+$toolbar-border-color:       $theme-primary-color !default;
+$toolbar-text-color:         $text-color !default;
+$toolbar-active-color:       $link-color !default;
+$toolbar-inactive-color:     $theme-light-primary-color !default;
+
+$tabs-background:            $theme-primary-color !default;
+$tabs-border-color:          $theme-primary-color !default;
+$tabs-tab-color-inactive:    $theme-light-primary-color !default;
+$tabs-tab-color-active:      $link-color !default;
+
+$list-text-color:            $text-color !default;
+$list-background-color:      #fff !default;
+$list-border-color:          $theme-light-primary-color !default;
+$list-md-border-color:       $theme-light-primary-color !default;
+$list-ios-border-color:      $theme-light-primary-color !default;
+$list-md-header-border-top:  transparent;
+$list-md-header-margin-bottom:   0px !default;
+
+
+$fab-ios-background-color:   $accent-color !default;
+$fab-md-background-color:    $fab-ios-background-color !default;
+$fab-md-background-color:    $fab-ios-background-color !default;
+$fab-md-text-color:          #fff !default;
+$fab-ios-text-color:         #fff !default;
+$fab-wp-text-color:          #fff !default;
+
+$card-ios-background-color:  $theme-light-primary-color !default;
+$card-md-background-color:   $theme-light-primary-color !default;
+$card-wp-background-color:   $theme-light-primary-color !default;
+$card-ios-header-color:      $theme-dark-primary-color;
+$card-md-header-color:       $theme-dark-primary-color;
+$card-wp-header-color:       $theme-dark-primary-color;
+
+$toggle-ios-background-color-on:       $accent-color !default;
+$toggle-ios-border-color-off:          lighten($toggle-ios-background-color-on, 25%) !default;
+$toggle-md-active-color:               $accent-color !default;
+$toggle-md-track-background-color-on:  lighten($toggle-md-active-color, 25%) !default;
+$toggle-md-track-background-color-off: lighten($toggle-md-active-color, 25%) !default;
+
+$range-ios-bar-active-background-color: $accent-color !default;
+$range-md-bar-active-background-color:  $accent-color !default;
+
+$checkbox-ios-background-color-on:      $accent-color !default;
+$checkbox-ios-icon-border-color-off:    lighten($accent-color, 25%) !default;
+$checkbox-md-icon-background-color-on:  $accent-color !default;
+$checkbox-md-icon-border-color-off:     $accent-color !default;
+$checkbox-md-icon-border-color-on:      $accent-color !default;
+
+$content-padding:            16px !default;
+$content-margin:             16px !default;
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
