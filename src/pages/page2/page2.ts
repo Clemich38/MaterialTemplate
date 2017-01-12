@@ -13,28 +13,31 @@ export class Page2 {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
 
-    // Let's populate this page with some filler content for funzies
+    // Let's pick some icon to ad in the list items
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
 
+    // Populate the list
     this.items = [];
     for (let i = 1; i < 15; i++) {
       this.items.push({
         title: 'Item ' + i,
         note: 'This is item #' + i,
+        // Add one random icon
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
   }
 
+  // open the item details page
   itemTapped(event, title, note) {
-    // open the item details page
     this.navCtrl.push(ItemPage, {
       title: title,
       note: note
     });
   }
 
+  // Display the addItem modal page
   addItem(){
     let addModal = this.modalCtrl.create(AddItemPage);
  
@@ -48,6 +51,7 @@ export class Page2 {
  
   }
  
+  // Add the new item to the list
   saveItem(item){
     this.items.push({
         title: item.title,

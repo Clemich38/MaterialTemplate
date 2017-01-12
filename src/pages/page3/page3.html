@@ -10,6 +10,7 @@
 
 <ion-content padding>
 
+  <!-- Template card list -->
   <ion-list>
     <ion-card *ngFor="let card of cards" (click)="itemTapped($event, card.header, card.text)">
       <ion-card-header>

@@ -13,6 +13,7 @@ export class Page3 {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
 
+    // Populate the list
     this.cards = [];
     for (let i = 1; i < 9; i++) {
       this.cards.push({
@@ -22,6 +23,7 @@ export class Page3 {
     }
   }
 
+  // Open the item detail page
   itemTapped(event, header, text) {
     // open the item details page
     this.navCtrl.push(ItemPage, {
@@ -30,6 +32,7 @@ export class Page3 {
     });
   }
 
+  // Open the addItem modal page
   addCard(){
     let addModal = this.modalCtrl.create(AddItemPage);
  
@@ -43,6 +46,7 @@ export class Page3 {
  
   }
  
+  // Save the new item in the list
   saveItem(item){
     this.cards.push({
         header: item.title,

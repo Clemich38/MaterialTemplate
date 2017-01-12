@@ -9,6 +9,7 @@
 
 <ion-content>
 
+  <!-- List template -->
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item.title, item.note)">
       <ion-icon [name]="item.icon" item-left color="dark"></ion-icon>
